@@ -1,8 +1,9 @@
 <template>  
-    <div>
-        <button @click="suppression" class="btn btn-outline-dark">
+    <div class="col">
+        <button @click="suppression" class="btn btn-dark">
             <em class="fas fa-trash"></em>
         </button>
+
         <p>
             <em class="fas fa-caret-right text-success"></em>
             {{ tache }}
@@ -22,14 +23,19 @@ export default {
 <style scoped>
 div{
     margin-top: 30px;
+    margin-left:10% !important;
+    margin-right:10% !important;
+}
+.col{
     display:flex;
     justify-content: left;
-    margin-left:36%;
+
+    padding-left:15px;
+    padding-right:15px;
 }
 p{
     margin-top: 18px;
     color: black;
-    letter-spacing: 1px;
 }
 button{
     border-radius: 1px;
